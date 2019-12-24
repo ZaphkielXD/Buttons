@@ -1,0 +1,345 @@
+/*Geral*/
+
+body {
+    background: rgb(238, 235, 235);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 1.7em;
+    padding-top: 1.7em; /*only without languange part*/
+}
+
+p {
+    font-size: 1.3em;
+    margin-left: 15%;
+    margin-bottom: 2em;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin-left: 15%;
+    list-style-type : square;
+    margin-bottom: 1.2em;
+}
+
+/*pt-eng*/
+.language {
+    text-align: right;
+    padding: 50px;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.button {
+    width: 70px;
+    height: 40px;
+}
+
+/*
+#pt {
+
+}
+
+#ing {
+
+}
+*/
+
+/*Buttons*/
+.botao:active, .botao:focus {
+    outline: none;
+    box-shadow: none;
+    border-style: none;
+}
+
+.botao {
+    border-style: none;
+    transition: all 0.5s ease;
+}
+
+#b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9,
+#b10, #b11, #b12, #b13, #b14, #b15, #b16, #b17, #b18, #b19 {
+    width: 20%;
+    height: 5em;
+    margin: 30px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    #b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9,
+    #b10, #b11, #b12, #b13, #b14, #b15, #b16, #b17, #b18, #b19 {
+        width: 30%;
+        margin: 50px auto;
+    }
+  }
+
+@media only screen and (max-width: 1000px) {
+    #b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9,
+    #b10, #b11, #b12, #b13, #b14, #b15, #b16, #b17, #b18, #b19 {
+        width: 30%;
+        margin: 50px auto;
+    }
+  }
+
+@media only screen and (max-width: 800px) {
+    #b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9,
+    #b10, #b11, #b12, #b13, #b14, #b15, #b16, #b17, #b18, #b19 {
+        width: 40%;
+        margin: 50px auto;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    #b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9,
+    #b10, #b11, #b12, #b13, #b14, #b15, #b16, #b17, #b18, #b19 {
+        width: 50%;
+        margin-right: 25%;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        text-align: center;
+    }
+  }
+
+
+/*each*/  
+#b1 {
+    pointer-events: none;
+}
+
+#b2:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#b3:hover {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+#b4:hover {
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+}
+
+#b5:hover {
+    -webkit-transform: rotateZ(-180deg);
+    -ms-transform: rotateZ(-180deg);
+    transform: rotateZ(-180deg);
+}
+
+#b6:hover {
+    -webkit-transform: rotateZ(-360deg);
+    -ms-transform: rotateZ(-360deg);
+    transform: rotateZ(-360deg);
+}
+
+
+#b7:hover {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+#b8:hover {
+    -webkit-animation: jump 0.6s ease;
+    animation: jump 0.6s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes jump
+{
+    15%
+    {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    80%
+    {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes jump
+{ 
+    20%
+    {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    } 
+    40%
+    {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    60%
+    {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    } 
+    80%
+    {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    } 
+    100%
+    {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+}
+
+#b9:hover {
+    border:  solid 2px  black;
+}
+
+#b10:hover {
+    border:  double 6px  black;
+}
+
+#b11:hover {
+    box-shadow: inset 0 0 0 25px black;
+}
+
+#b12:hover {
+    background-color: violet;
+}
+
+#b13:hover {
+    background-image: url(https://media.giphy.com/media/26ufmyrjQ4BmKN7xe/giphy.gif);
+    background-clip: text;
+    -webkit-text-fill-color: white; 
+    
+}
+
+#b14:hover {
+    box-shadow:
+    1px 1px #53a7ea,
+    3px 2px #53a7ea,
+    6px 3px #53a7ea;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+}
+
+#b15:hover{
+    border-radius:0%;
+}
+
+#b16:hover{
+    border-radius:100%;
+}
+
+#b17:hover {
+    -webkit-animation: run 1s ease;
+    animation: run 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+@keyframes run
+{ 
+    90%
+    {
+        -webkit-transform: translateX(-400px);
+        transform: translateX(-400px);
+    } 
+}
+
+#b18:hover {
+    opacity: 0%;
+}
